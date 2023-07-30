@@ -1,0 +1,1 @@
+echo "ccc" > C:/Temp/success.txt
