@@ -218,12 +218,40 @@ namespace AzureBurstGUI
 
         private void button5_Click(object sender, EventArgs e)
         {
+            // 创建自定义的对话框对象
+            Form2 dialogForm = new Form2();
 
+            // 显示对话框，并获取用户输入的数据
+            DialogResult result = dialogForm.ShowDialog();
+
+            // 用户点击确定按钮并输入数据后，执行相关函数
+            if (result == DialogResult.OK)
+            {
+                // 获取用户输入的参数
+                string inputData = dialogForm.UserInputData;
+
+                // 执行相关函数,将参数拼接到命令后面
+                InvokeScript("Get-AzPasswords ", inputData);
+            }
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
+            // 创建自定义的对话框对象
+            Form2 dialogForm = new Form2();
 
+            // 显示对话框，并获取用户输入的数据
+            DialogResult result = dialogForm.ShowDialog();
+
+            // 用户点击确定按钮并输入数据后，执行相关函数
+            if (result == DialogResult.OK)
+            {
+                // 获取用户输入的参数
+                string inputData = dialogForm.UserInputData;
+
+                // 执行相关函数,将参数拼接到命令后面
+                InvokeScript("Invoke-AzVMBulkCMD ", inputData);
+            }
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -233,7 +261,22 @@ namespace AzureBurstGUI
 
         private void button8_Click(object sender, EventArgs e)
         {
+            // 创建自定义的对话框对象
+            Form2 dialogForm = new Form2();
 
+            // 显示对话框，并获取用户输入的数据
+            DialogResult result = dialogForm.ShowDialog();
+
+            // 用户点击确定按钮并输入数据后，执行相关函数
+            if (result == DialogResult.OK)
+            {
+                // 获取用户输入的参数
+                string inputData = dialogForm.UserInputData;
+
+                // 执行相关函数,将参数拼接到命令后面
+                InvokeScript("Get-AzureADDomainInfo ", inputData);
+            }
+            
         }
 
         private void button7_Click(object sender, EventArgs e)
@@ -255,34 +298,23 @@ namespace AzureBurstGUI
             }
         }
 
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void button13_Click(object sender, EventArgs e)
         {
+            // 创建自定义的对话框对象
+            Form2 dialogForm = new Form2();
 
-        }
+            // 显示对话框，并获取用户输入的数据
+            DialogResult result = dialogForm.ShowDialog();
 
-        private void maskedTextBox1_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
-        {
+            // 用户点击确定按钮并输入数据后，执行相关函数
+            if (result == DialogResult.OK)
+            {
+                // 获取用户输入的参数
+                string inputData = dialogForm.UserInputData;
 
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void saveFileDialog1_FileOk(object sender, CancelEventArgs e)
-        {
-
+                // 执行相关函数,将参数拼接到命令后面
+                InvokeScript("Invoke-Phishing ", inputData);
+            }
         }
 
         private void btnSave(object sender, EventArgs e)
@@ -332,6 +364,253 @@ namespace AzureBurstGUI
         private void label6_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            // 创建自定义的对话框对象
+            Form2 dialogForm = new Form2();
+
+            // 显示对话框，并获取用户输入的数据
+            DialogResult result = dialogForm.ShowDialog();
+
+            // 用户点击确定按钮并输入数据后，执行相关函数
+            if (result == DialogResult.OK)
+            {
+                // 获取用户输入的参数
+                string inputData = dialogForm.UserInputData;
+
+                // 执行相关函数,将参数拼接到命令后面
+                InvokeScript("Get-AzDomainInfo ", inputData);
+            }
+        }
+
+        private void button15_Click(object sender, EventArgs e)
+        {
+            // 创建自定义的对话框对象
+            Form2 dialogForm = new Form2();
+
+            // 显示对话框，并获取用户输入的数据
+            DialogResult result = dialogForm.ShowDialog();
+
+            // 用户点击确定按钮并输入数据后，执行相关函数
+            if (result == DialogResult.OK)
+            {
+                // 获取用户输入的参数
+                string inputData = dialogForm.UserInputData;
+
+                // 执行相关函数,将参数拼接到命令后面
+                InvokeScript("Invoke-EnumerateAzureSubDomains ", inputData);
+            }
+        }
+
+        private void button17_Click(object sender, EventArgs e)
+        {
+            // 创建自定义的对话框对象
+            Form2 dialogForm = new Form2();
+
+            // 显示对话框，并获取用户输入的数据
+            DialogResult result = dialogForm.ShowDialog();
+
+            // 用户点击确定按钮并输入数据后，执行相关函数
+            if (result == DialogResult.OK)
+            {
+                // 获取用户输入的参数
+                string inputData = dialogForm.UserInputData;
+
+                // 执行相关函数,将参数拼接到命令后面
+                InvokeScript("Get-AzureVMExtensionSettings.ps1 ", inputData);
+            }
+        }
+
+        private void button21_Click(object sender, EventArgs e)
+        {
+            // 创建自定义的对话框对象
+            Form2 dialogForm = new Form2();
+
+            // 显示对话框，并获取用户输入的数据
+            DialogResult result = dialogForm.ShowDialog();
+
+            // 用户点击确定按钮并输入数据后，执行相关函数
+            if (result == DialogResult.OK)
+            {
+                // 获取用户输入的参数
+                string inputData = dialogForm.UserInputData;
+
+                // 执行相关函数,将参数拼接到命令后面
+                InvokeScript("Get-AzStorageKeysREST ", inputData);
+            }
+        }
+
+        private void button14_Click(object sender, EventArgs e)
+        {
+            // 创建自定义的对话框对象
+            Form2 dialogForm = new Form2();
+
+            // 显示对话框，并获取用户输入的数据
+            DialogResult result = dialogForm.ShowDialog();
+
+            // 用户点击确定按钮并输入数据后，执行相关函数
+            if (result == DialogResult.OK)
+            {
+                // 获取用户输入的参数
+                string inputData = dialogForm.UserInputData;
+
+                // 执行相关函数,将参数拼接到命令后面
+                InvokeScript("Set-AzVMAccessExtension ", inputData);
+            }
+        }
+
+        private void button19_Click(object sender, EventArgs e)
+        {
+            // 创建自定义的对话框对象
+            Form2 dialogForm = new Form2();
+
+            // 显示对话框，并获取用户输入的数据
+            DialogResult result = dialogForm.ShowDialog();
+
+            // 用户点击确定按钮并输入数据后，执行相关函数
+            if (result == DialogResult.OK)
+            {
+                // 获取用户输入的参数
+                string inputData = dialogForm.UserInputData;
+
+                // 执行相关函数,将参数拼接到命令后面
+                InvokeScript("Get-AzACR ", inputData);
+            }
+        }
+
+        private void button16_Click(object sender, EventArgs e)
+        {
+            // 创建自定义的对话框对象
+            Form2 dialogForm = new Form2();
+
+            // 显示对话框，并获取用户输入的数据
+            DialogResult result = dialogForm.ShowDialog();
+
+            // 用户点击确定按钮并输入数据后，执行相关函数
+            if (result == DialogResult.OK)
+            {
+                // 获取用户输入的参数
+                string inputData = dialogForm.UserInputData;
+
+                // 执行相关函数,将参数拼接到命令后面
+                InvokeScript("Invoke-EnumerateAzureBlobs ", inputData);
+            }
+        }
+
+        private void button18_Click(object sender, EventArgs e)
+        {
+            // 创建自定义的对话框对象
+            Form2 dialogForm = new Form2();
+
+            // 显示对话框，并获取用户输入的数据
+            DialogResult result = dialogForm.ShowDialog();
+
+            // 用户点击确定按钮并输入数据后，执行相关函数
+            if (result == DialogResult.OK)
+            {
+                // 获取用户输入的参数
+                string inputData = dialogForm.UserInputData;
+
+                // 执行相关函数,将参数拼接到命令后面
+                InvokeScript("Set-AzVMCustomScriptExtension ", inputData);
+            }
+        }
+
+        private void button20_Click(object sender, EventArgs e)
+        {
+            // 创建自定义的对话框对象
+            Form2 dialogForm = new Form2();
+
+            // 显示对话框，并获取用户输入的数据
+            DialogResult result = dialogForm.ShowDialog();
+
+            // 用户点击确定按钮并输入数据后，执行相关函数
+            if (result == DialogResult.OK)
+            {
+                // 获取用户输入的参数
+                string inputData = dialogForm.UserInputData;
+
+                // 执行相关函数,将参数拼接到命令后面
+                InvokeScript("Invoke-AzVMCommandREST ", inputData);
+            }
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            // 创建自定义的对话框对象
+            Form2 dialogForm = new Form2();
+
+            // 显示对话框，并获取用户输入的数据
+            DialogResult result = dialogForm.ShowDialog();
+
+            // 用户点击确定按钮并输入数据后，执行相关函数
+            if (result == DialogResult.OK)
+            {
+                // 获取用户输入的参数
+                string inputData = dialogForm.UserInputData;
+
+                // 执行相关函数,将参数拼接到命令后面
+                InvokeScript("Get-SyncObjects ", inputData);
+            }
+        }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+            // 创建自定义的对话框对象
+            Form2 dialogForm = new Form2();
+
+            // 显示对话框，并获取用户输入的数据
+            DialogResult result = dialogForm.ShowDialog();
+
+            // 用户点击确定按钮并输入数据后，执行相关函数
+            if (result == DialogResult.OK)
+            {
+                // 获取用户输入的参数
+                string inputData = dialogForm.UserInputData;
+
+                // 执行相关函数,将参数拼接到命令后面
+                InvokeScript("Get-SyncCredentials ", inputData);
+            }
+        }
+
+        private void button22_Click(object sender, EventArgs e)
+        {
+            // 创建自定义的对话框对象
+            Form2 dialogForm = new Form2();
+
+            // 显示对话框，并获取用户输入的数据
+            DialogResult result = dialogForm.ShowDialog();
+
+            // 用户点击确定按钮并输入数据后，执行相关函数
+            if (result == DialogResult.OK)
+            {
+                // 获取用户输入的参数
+                string inputData = dialogForm.UserInputData;
+
+                // 执行相关函数,将参数拼接到命令后面
+                InvokeScript("Get-AccessTokenForAADGraph ", inputData);
+            }
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            // 创建自定义的对话框对象
+            Form2 dialogForm = new Form2();
+
+            // 显示对话框，并获取用户输入的数据
+            DialogResult result = dialogForm.ShowDialog();
+
+            // 用户点击确定按钮并输入数据后，执行相关函数
+            if (result == DialogResult.OK)
+            {
+                // 获取用户输入的参数
+                string inputData = dialogForm.UserInputData;
+
+                // 执行相关函数,将参数拼接到命令后面
+                InvokeScript("Install-PTASpy ", inputData);
+            }
         }
     }
 
